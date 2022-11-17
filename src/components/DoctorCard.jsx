@@ -34,7 +34,7 @@ function DoctorCard({
         </div>
         <div className="about text-xs  break-words py-4">{about}</div>
         <br />
-        <div className="price text-right">{price}</div>
+        <div className="price text-right font-bold ">{price}</div>
       </div>
     </div>
   );

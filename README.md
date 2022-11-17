@@ -3,8 +3,8 @@
 
 ```
 1. Clone this repo
-2. yarn
-3. yarn dev
+2. $yarn
+3. $yarn dev
 ```
 
 ## Deployed on Vercel

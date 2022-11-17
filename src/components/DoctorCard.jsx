@@ -16,7 +16,7 @@ function DoctorCard({
   }, []);
 
   return (
-    <div className="card flex items-center border-black border-2 max-w-[30rem] h-56 w-full overflow-hidden mx-6 my-12">
+    <div className="card flex items-center border-black border-2  max-w-[30rem] h-[30rem] sm:h-56 w-full overflow-hidden mx-6 my-12">
       <div className="photo w-1/4 bg-slate-200 flex items-center justify-center h-full">
         <Image
           src={photo}

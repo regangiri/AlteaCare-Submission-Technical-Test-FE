@@ -28,13 +28,15 @@ function DoctorCard({
         />
       </div>
       <div className="doctor-description-container bg-green-500 flex flex-col w-3/4 h-full">
-        <div className="name text-lg font-bold">{name}</div>
-        <div className="hospital-and-specialization text-sm">
+        <div className="name text-sm sm:text-base lg:text-lg font-bold h-1/6">
+          {name}
+        </div>
+        <div className="hospital-and-specialization text-xs sm:text-sm h-1/6">
           {hospital}-{specialization}
         </div>
-        <div className="about text-xs  break-words py-4">{about}</div>
+        <div className="about text-xs  break-words py-4 h-3/6">{about}</div>
         <br />
-        <div className="price text-right font-bold ">{price}</div>
+        <div className="price text-right font-bold h-1/6">{price}</div>
       </div>
     </div>
   );

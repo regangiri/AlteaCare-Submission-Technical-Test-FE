@@ -1,7 +1,15 @@
 import Image from "next/image";
 import { useEffect } from "react";
 
-function DoctorCard({ name, about, photo, price, specialization, hospital }) {
+function DoctorCard({
+  name,
+  about,
+  photo,
+  price,
+  specialization,
+  hospital,
+  key,
+}) {
   useEffect(() => {
     var el = document.querySelector(".about");
     el.innerHTML = el.innerHTML.replace(/&nbsp;/g, "");

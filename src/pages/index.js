@@ -58,6 +58,7 @@ export default function Home() {
           .map((doctor) => {
             return (
               <DoctorCard
+                key={doctor.doctor_id}
                 name={doctor.name}
                 about={doctor.about_preview}
                 photo={doctor.photo.url}

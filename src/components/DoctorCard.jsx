@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 function DoctorCard({ name, about, photo, price, specialization, hospital }) {
   useEffect(() => {
@@ -16,6 +16,7 @@ function DoctorCard({ name, about, photo, price, specialization, hospital }) {
           width={150}
           height={150}
           className="m-2"
+          alt="doctor"
         />
       </div>
       <div className="doctor-description-container bg-green-500 flex flex-col w-3/4 h-full">

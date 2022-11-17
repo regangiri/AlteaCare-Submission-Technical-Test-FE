@@ -4,11 +4,11 @@ function SearchBar(props) {
   return (
     <div className="w-full bg-teal-200 flex items-start justify-center flex-col my-8  p-6 rounded-xl">
       <div className="search-bar-title py-3 text-xl">Doctor Finder</div>
-      <div className="search-options-container">
+      <div className="search-options-container flex items-center justify-center sm:flex-row flex-col">
         <input
           type="text"
           placeholder="input doctor name"
-          className="mr-2"
+          className="mr-2 my-2 p-1"
           onChange={(e) => {
             props.setDoctorNameFilter(e.target.value);
           }}
@@ -19,12 +19,14 @@ function SearchBar(props) {
         <select
           name="hospital"
           id="hospital"
-          className="mx-2"
+          className="mx-2 my-2 p-1"
           onChange={(e) => {
             props.setHospitalFilter(e.target.value);
           }}
         >
-          <option value="">Semua Rumah Sakit</option>
+          <option value="" selected>
+            Semua Rumah Sakit
+          </option>
           <option value="Mitra Keluarga Bintaro">Mitra Keluarga Bintaro</option>
           <option value="Mitra Keluarga Gading Serpong">
             Mitra Keluarga Gading Serpong
@@ -36,12 +38,14 @@ function SearchBar(props) {
         <select
           name="specialization"
           id="specialization"
-          className="mx-2"
+          className="mx-2 my-2 p-1"
           onChange={(e) => {
             props.setSpecializationFilter(e.target.value);
           }}
         >
-          <option value="">Semua Spesialisasi</option>
+          <option value="" selected>
+            Semua Spesialisasi
+          </option>
           <option value="Dokter Umum">Dokter Umum</option>
           <option value="Anak">Dokter Anak</option>
           <option value="Penyakit Dalam">Dokter Penyakit Dalam</option>

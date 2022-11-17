@@ -7,8 +7,8 @@ import SearchBar from "../components/SearchBar";
 
 export default function Home() {
   const [doctorList, setDoctorList] = useState([]);
-  const [hospitalFilter, setHospitalFilter] = useState(null);
-  const [specializationFilter, setSpecializationFilter] = useState(null);
+  const [hospitalFilter, setHospitalFilter] = useState("");
+  const [specializationFilter, setSpecializationFilter] = useState("");
   const [doctorNameFilter, setDoctorNameFilter] = useState("");
 
   const getAllDoctor = () => {

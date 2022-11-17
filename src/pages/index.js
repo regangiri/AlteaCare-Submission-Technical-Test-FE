@@ -1,16 +1,10 @@
 import axios from "axios";
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import DoctorCard from "../components/DoctorCard";
 import SearchBar from "../components/SearchBar";
 
 export default function Home() {
-  <Head>
-    <title>Doctor Finder</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  </Head>;
-
   const [doctorList, setDoctorList] = useState([]);
   const [hospitalFilter, setHospitalFilter] = useState("");
   const [specializationFilter, setSpecializationFilter] = useState("");
@@ -31,6 +25,11 @@ export default function Home() {
 
   return (
     <div className="">
+      <Head>
+        <title>Doctor Finder</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
       <SearchBar
         setHospitalFilter={(hospital) => {
           setHospitalFilter(hospital);

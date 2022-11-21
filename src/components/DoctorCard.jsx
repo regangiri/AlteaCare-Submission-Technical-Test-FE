@@ -34,7 +34,9 @@ function DoctorCard({
         <div className="hospital-and-specialization text-xs sm:text-sm h-1/6">
           {hospital}-{specialization}
         </div>
-        <div className="about text-xs  break-words py-4 h-3/6">{about}</div>
+        <div className="about text-xs  break-words py-4 h-3/6">
+          {about.replace(/&nbsp;/g, " ")}
+        </div>
         <br />
         <div className="price text-right font-bold h-1/6">{price}</div>
       </div>
